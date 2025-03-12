@@ -2,7 +2,7 @@ package Patterns;
 
 public class Seventeen {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 5;
         seventeen(n);
     }
     static void seventeen(int n){
