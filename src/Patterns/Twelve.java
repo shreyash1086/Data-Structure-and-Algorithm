@@ -2,10 +2,9 @@ package Patterns;
 
 public class Twelve {
     public static void main(String[] args) {
-        int n = 4;
-        int x = 1;
+        int n = 9;
         for (int i = 0; i < n; i++) {
-            int temp = x;
+            int temp = 1;
             for (int j = 0; j <= i; j++) {
                 System.out.print(temp);
                 temp++;
@@ -19,7 +18,6 @@ public class Twelve {
                 temp--;
                 System.out.print(temp);
             }
-//            temp = x;
             System.out.println();
         }
     }
