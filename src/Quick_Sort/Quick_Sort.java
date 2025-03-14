@@ -25,7 +25,7 @@ public class Quick_Sort {
         int pivot = low;
         int i = low;
         int j = high;
-
+        int sort = 0;
         while (i < j){
             while (arr[i] <= arr[pivot] && i <= high - 1){
                 i++;
@@ -34,6 +34,7 @@ public class Quick_Sort {
                 j--;
             }
             if(i<j){
+                sort++;
                 swap(arr,i,j);
             }
         }

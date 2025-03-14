@@ -2,7 +2,7 @@ package TUF;
 
 public class SecondLargestInArray {
     public static void main(String[] args) {
-        int arr[] = {1,2,4,45,7,12,9,7,5};
+        int arr[] = {1,2,4,45,45,7,12,9,7,5};
 //        int secondLargest = brute(arr);
 //        int secondLargest = Better(arr);
         int secondLargest = Optimal(arr);
@@ -79,7 +79,7 @@ public class SecondLargestInArray {
 
 //---------Better---------//
 
-//---------Optimal---------//
+//---------Optimal---------//x`
 
     static int Optimal(int[] arr){
         int largest = arr[0];
@@ -89,11 +89,10 @@ public class SecondLargestInArray {
             if(arr[i]>largest){
                 secondLargest = largest;
                 largest = arr[i];
-            } else if (arr[i] > secondLargest) {
+            } else if (arr[i]<largest && arr[i] > secondLargest) {
                 secondLargest = arr[i];
             }
         }
-
         return secondLargest;
     }
 

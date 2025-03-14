@@ -4,15 +4,15 @@ public class Bubble_Sort {
     public static void main(String[] args) {
         int[] arr = {13,46,24,52,20,9,45,56};
         for (int i = arr.length-1; i >= 1; i--) {
+            int didSwap = 0;
             for (int j = 0; j <= i - 1; j++) {
-                int didSwap = 0;
                 if(arr[j] > arr[j+1]){
                     swap(arr,j,j+1);
-                    didSwap=1;
+                    didSwap = 1;
                 }
-                if(didSwap == 0){
-                    break; // this statement is used to break the outer loop inner loop already indicated that the array is sorted
-                }
+            }
+            if(didSwap == 0){
+                break; // this statement is used to break the outer loop inner loop already indicated that the array is sorted
             }
         }
 
