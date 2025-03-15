@@ -10,13 +10,29 @@ public class LeftRotateAnArrayByOnePlace {
         }
         System.out.println("before");
 //        int[] sol = brute(arr);
-        leftRotate(arr);
+        optimal(arr);
         for(int x: arr){
             System.out.print(x+" ");
         }
         System.out.println("after");
 
     }
+
+
+//------------Optimal Solution------------//
+
+//    Time Complexity	O(N) (Each element shifts once)
+//    Space Complexity	O(1) (No extra array used)
+    
+    static void optimal(int[] arr){
+        int start = arr[0];
+        for (int i = 0; i < arr.length-1; i++) {
+            arr[i] = arr[i+1];
+        }
+        arr[arr.length-1] = start;
+    }
+
+//------------Optimal Solution------------//
 
 //------------MyApproach Solution------------//
 
@@ -52,10 +68,5 @@ public class LeftRotateAnArrayByOnePlace {
 
 //------------Brute Force Solution------------//
 
-//------------Optimal Solution------------//
-
-
-
-//------------Optimal Solution------------//
 
 }
