@@ -1,0 +1,12 @@
+Here is a list of common format specifiers in Java:
+%s: Formats a string.
+%d: Formats a decimal integer (base 10).
+%f: Formats a floating-point number.
+%c: Formats a single character.
+%b: Formats a boolean value (outputs "true" or "false").
+%e: Formats a floating-point number in scientific notation (exponential).
+%x: Formats an integer in hexadecimal (base 16).
+%o: Formats an integer in octal (base 8).
+%t: Used for date and time formatting, requiring a second conversion character (e.g., %tY for year, %tm for month).
+%%: Inserts a literal percent sign.
+%n: Inserts a platform-specific newline character.
