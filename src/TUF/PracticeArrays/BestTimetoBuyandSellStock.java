@@ -3,8 +3,20 @@ package TUF.PracticeArrays;
 public class BestTimetoBuyandSellStock {
     public static void main(String[] args) {
         int[] arr = {2,4,1};
-        System.out.println(average(arr));
+        System.out.println(Optimal(arr));
     }
+
+    static int Optimal(int[] arr){
+        int mini = arr[0];
+        int profit = 0;
+        for(int i=1;i<arr.length;i++){
+            int cost = arr[i]-mini;
+            profit=Math.max(profit,cost);
+            mini=Math.min(mini,arr[i]);
+        }
+        return profit;
+    }
+
     static int average(int[] arr){
         int bp = 0;
         for (int i = 0; i < arr.length-1; i++) {
